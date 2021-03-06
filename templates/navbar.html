@@ -1,0 +1,36 @@
+{% url 'home' as home_url %}
+{% url 'about' as about_url %}
+{% url 'products' as products_url %}
+{% url 'faqs' as faqs_url %}
+{% url 'contact' as contact_url %}
+{% load staticfiles %}
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'home' %}"><img class="intro-img img-fluid  rounded" style="height:50px;" src="{% static 'yepbees/img/logo-wh.png'%}" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item {% if request.path == home_url %} active {% endif %} px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="{{ home_url }}">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item {% if request.path == about_url %} active {% endif %} px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="{{ about_url }}">About</a>
+        </li>
+        <li class="nav-item {% if request.path == products_url %} active {% endif %} px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="{{ products_url }}">Products</a>
+        </li>
+        <li class="nav-item {% if request.path == faqs_url %} active {% endif %} px-lg-4">
+          <a class="ex1 nav-link text-uppercase text-expanded" href="{{ faqs_url }}">FAQs</a>
+        </li>
+        <li class="nav-item {% if request.path == contact_url %} active {% endif %} px-lg-4">
+          <a class="nav-link text-uppercase text-expanded" href="{{ contact_url }}">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

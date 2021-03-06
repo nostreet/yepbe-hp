@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<section class="page-section">
+  <div class="container">
+    <div class="product-item">
+      <div class="product-item-title d-flex">
+        <div class="bg-faded p-5 d-flex ml-auto rounded">
+          <h2 class="section-heading mb-0">
+            <span class="section-heading-upper">Getting bees on your property</span>
+            <span class="section-heading-lower">How it works</span>
+          </h2>
+        </div>
+      </div>
+      <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'yepbees/img/products-01.jpg'%}" alt="">
+      <div class="product-item-description d-flex mr-auto">
+        <div class="bg-faded p-5 rounded">
+          <h2 class="section-heading mb-0">
+            <span class="section-heading-upper mb-1">Step 1 - Choose Your Plan</span>
+          </h2>
+            <p class="mb-0">Pick an plan that you’re interested in. We’ll come out to your property and access the most suitable area to place the beehive.<br><br>
+
+            </p>
+            <small>(you'll receive honey regardless if your hive produces)</small>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing ">
+  <div class="container">
+    <div class="row">
+      <!-- Option 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Option 1</h5>
+            <h6 class="card-price text-center">$40<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>1 full beehive on your property</strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Property inspection for hive placement</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><b>10kg</b> honey from your hive <br>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>+12 visits per year</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Yep Bees takes care of all hive management</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Disease management control</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Pollinate your garden year round</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Site registration</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>12 month contract</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Option 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Option 2</h5>
+            <h6 class="card-price text-center">$50<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>2 full beehives on your property</strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Property inspection for hive placement</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><b>17kg</b> honey from your hive <br>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>+12 visits per year</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Yep Bees takes care of all hive management</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Disease management control</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Pollinate your garden year round</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Site registration</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>12 month contract</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Option 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Option 3</h5>
+            <h6 class="card-price text-center">$75<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>3-4 full beehives on your property</strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Property inspection for hive placement</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><b>25kg</b> honey from your hive <br>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>+12 visits per year</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Yep Bees takes care of all hive management</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Disease management control</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Pollinate your garden year round</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Site registration</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>12 month contract</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option 4 -->
+      <div class="col-lg-3 col-md-6 product-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Option 4</h5>
+            <h6 class="card-price text-center">$95<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>3-4 full beehives on your property</strong></li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Property inspection for hive placement</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span><b>30kg</b> honey from your hive <br>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>+12 visits per year</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Yep Bees takes care of all hive management</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Disease management control</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Pollinate your garden year round</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Site registration</li>
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>12 month contract</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="container">
+    <div class="product-item">
+      <div class="product-item-title d-flex">
+        <div class="bg-faded p-5 rounded">
+          <h2 class="section-heading mb-0">
+            <span class="section-heading-upper mb-1">Step 2 - <a href="{% url 'contact' %}">Contact us</a><br></span>
+          </h2>
+            <p class="mb-0"> to set up an appointment
+
+            </p>
+
+        </div>
+      </div>
+      <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{% static 'yepbees/img/products-02.jpg'%}" alt="">
+      <div class="product-item-description d-flex ml-auto">
+        <div class="bg-faded p-5 rounded">
+          <p class="mb-0">
+            <b>Step 3</b>  – We come to your property to access where a hive would best suit your property <br>
+            <b>Step 4</b> – We will set up the beehives<br>
+            <b>Step 5</b> – Enjoy the honey and pollination of your garden!
+</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

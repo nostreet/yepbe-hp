@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+{% load staticfiles %}
+
+<section class="page-section about-heading">
+  <div class="container">
+    <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'yepbees/img/about.jpg'%}" alt="">
+    <div class="about-heading-content">
+      <div class="row">
+        <div class="col-xl-9 col-lg-10 mx-auto">
+          <div class="bg-faded rounded p-5">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">A passion for bees</span>
+              <span class="section-heading-lower">About</span>
+            </h2>
+            <p>Imagine having honey from your own backyard? More and more people want bees in their gardens
+              and surroundings. Bees are fascinating and they can easily become an obsession, in a good way.
+              Bees are important to our food supply, keeping bees was once simple but now it can be a real
+              challenge just to keep a hive of bees alive.</p>
+
+            <p class="mb-0"> <em>We love</em> keeping bees at Yep Bees Ltd. and want you to love it too. Beekeeping has
+              become more and more popular in the past 5 years, and for good cause. New Zealand has begun
+              to open the doors for honeybees and begun giving bees the respect they deserve as super pollinators. 
+            </p><br>
+
+            <p class="mb-0">Keeping bees is much more than harvesting honey, bees connect us with our natural
+              environment, with the weather and the seasons, and best of all they bring such pleasure.
+              Through pollination, your honeybees will really improve your local environment, creating
+              more flowers, bigger fruits and vegetables and healthier plants all around.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

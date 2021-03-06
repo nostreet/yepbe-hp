@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+{% load staticfiles %}
+{% load bootstrap3 %}
+
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+          <h2 class="section-heading mb-5">
+            <span class="section-heading-upper">Contact Form</span>
+          </h2>
+          <p class="mb-0">Please feel free to contact us if you are interested in hiring a beehive or would like me to acess your property for the best area to place a hive.
+      </p><br><br>
+      <div class="container">
+        {% if messages %}
+                {% for message in messages %}
+                <h5>  {{ message }}</h5>
+                {% endfor %}
+                <br><br>
+        {% endif %}
+      <div class="outer">
+
+
+            <form id="form" method="POST">
+              {% csrf_token %}
+              {% bootstrap_form form %}
+              <div class="g-recaptcha" data-sitekey="6LezwJQUAAAAAFn-YCYZwvyudL6QDpv2cs0bJ9wH"></div>
+              <p style="margin-top:5px;"><small> <em>If you don't hear back from us within a few days, please make sure to check your <u>spam folder</u> </em></small>.</p>
+              {% buttons %}
+                <button type="submit" class="btn btn-primary">Send</button>
+              {% endbuttons %}
+              <div id="modal"></div>
+            </form>
+  </div>
+          <p class="mb-0">
+
+          <strong>Stephen Hiskemuller</strong>   <br>
+
+            027 352 2522 <br>
+
+            Email: <a href="mailto:yepbees@gmail.com">yepbees@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}
